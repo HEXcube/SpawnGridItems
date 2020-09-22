@@ -1,0 +1,7 @@
+:root {
+  --item-height: 120px;
+}
+
+#spawn-item-button {
+  min-height: var(--item-height);
+}
