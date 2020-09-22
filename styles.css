@@ -19,4 +19,15 @@
   line-height: 0.4em;
   top: 0;
   right: 0;
+  transition: 0.4s;
+}
+
+/* https://bitsofco.de/when-do-the-hover-focus-and-active-pseudo-classes-apply/#orderofstyleshoverthenfocusthenactive */
+.remove-item-button:hover {
+  color: white;
+}
+
+.remove-item-button:focus, .remove-item-button:active {
+  /* https://css-tricks.com/8-digit-hex-codes/ */
+  color: #00000080;
 }
