@@ -30,7 +30,11 @@
       <div class="col spawn-button-column py-3">
         <button type="button" class="btn btn-outline-secondary btn-block h-100" id="spawn-item-button"
           onclick="spawnGridItem()">
-          <span class="d-block">&#x2795;</span>
+          <!--
+            https://getbootstrap.com/docs/4.5/content/typography/
+            https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip/38452396#38452396
+          -->
+          <span class="d-block display-4 prevent-emoji">&#x2795;&#xFE0E;</span>
           <span>Spawn Item</span>
         </button>
       </div><!-- ./spawn-button-column -->
@@ -45,13 +49,17 @@
           <!--
             https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
             https://getbootstrap.com/docs/4.5/utilities/borders/#border-radius
+            https://getbootstrap.com/docs/4.5/utilities/position/
           -->
-          <div class="grid-item bg-secondary rounded-lg p-5 text-center">
+          <div class="grid-item bg-secondary rounded-lg p-5 text-center position-relative">
             <span>item</span>
-            <!-- https://geeksforgeeks.org/how-to-make-bootstrap-button-transparent/ -->
-            <button onclick="removeGridItem(this)" type="button" class="btn bg-transparent">
+            <!--
+              https://geeksforgeeks.org/how-to-make-bootstrap-button-transparent/
+              https://getbootstrap.com/docs/4.5/utilities/shadows/
+            -->
+            <button onclick="removeGridItem(this)" type="button" class="remove-item-button btn bg-transparent pt-3 pr-3 shadow-none position-absolute">
               <!-- https://tutorialzine.com/2014/12/you-dont-need-icons-here-are-100-unicode-symbols-that-you-can-use -->
-              <span>&#x2716;</span>
+              <span class="prevent-emoji">&#x2716;&#xFE0E;</span>
             </button>
           </div><!-- ./grid-item -->
         </div><!-- ./grid-column -->

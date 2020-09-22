@@ -31,7 +31,7 @@ function removeGridItem(gridItem) {
  */
 function setItemHeightVariable() {
   /*
-    Unhide the elements temporarily so,
+    Unhide the parent element temporarily so, height could be obtained
     https://stackoverflow.com/questions/2345784/jquery-get-height-of-hidden-element-in-jquery/2345813#2345813
     https://stackoverflow.com/questions/4777077/removing-elements-by-class-name#4777105
     https://getbootstrap.com/docs/4.5/utilities/visibility/

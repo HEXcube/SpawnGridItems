@@ -5,3 +5,18 @@
 #spawn-item-button {
   min-height: var(--item-height);
 }
+
+/*
+  https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip/38452396#38452396
+  https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip/61425438#61425438
+*/
+.prevent-emoji {
+  font-family: monospace;
+}
+
+.remove-item-button {
+  font-size: 3em;
+  line-height: 0.4em;
+  top: 0;
+  right: 0;
+}
