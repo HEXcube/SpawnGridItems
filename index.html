@@ -21,9 +21,11 @@
 </head>
 
 <body>
-  <!-- https://getbootstrap.com/docs/4.5/layout/grid/#row-columns -->
   <div class="container py-4">
-    <!-- https://getbootstrap.com/docs/4.5/layout/grid/#horizontal-alignment -->
+    <!--
+      https://getbootstrap.com/docs/4.5/layout/grid/#row-columns
+      https://getbootstrap.com/docs/4.5/layout/grid/#horizontal-alignment
+    -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center">
       <div class="col spawn-button-column py-3">
         <button type="button" class="btn btn-outline-secondary btn-block h-100" id="spawn-item-button"
@@ -36,20 +38,25 @@
   </div><!-- ./container -->
 
   <div class="sample-components d-none">
-    <div class="col grid-column py-3">
-      <!--
-        https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
-        https://getbootstrap.com/docs/4.5/utilities/borders/#border-radius
-      -->
-      <div class="grid-item bg-secondary rounded-lg p-5 text-center">
-        <span>item</span>
-        <!-- https://geeksforgeeks.org/how-to-make-bootstrap-button-transparent/ -->
-        <button onclick="removeGridItem(this)" type="button" class="btn bg-transparent">
-          <!-- https://tutorialzine.com/2014/12/you-dont-need-icons-here-are-100-unicode-symbols-that-you-can-use -->
-          <span>&#x2716;</span>
-        </button>
-      </div><!-- ./grid-item -->
-    </div><!-- ./grid-column -->
+    <!-- Wrap the sample grid-column with container, row, etc. so it maintains the same height as the ones in use -->
+    <div class="container py-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center">
+        <div class="col grid-column py-3">
+          <!--
+            https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
+            https://getbootstrap.com/docs/4.5/utilities/borders/#border-radius
+          -->
+          <div class="grid-item bg-secondary rounded-lg p-5 text-center">
+            <span>item</span>
+            <!-- https://geeksforgeeks.org/how-to-make-bootstrap-button-transparent/ -->
+            <button onclick="removeGridItem(this)" type="button" class="btn bg-transparent">
+              <!-- https://tutorialzine.com/2014/12/you-dont-need-icons-here-are-100-unicode-symbols-that-you-can-use -->
+              <span>&#x2716;</span>
+            </button>
+          </div><!-- ./grid-item -->
+        </div><!-- ./grid-column -->
+      </div><!-- ./row -->
+    </div><!-- ./container -->
   </div><!-- ./sample-components -->
 
   <!-- Bootstrap -->

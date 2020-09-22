@@ -17,3 +17,26 @@ function removeGridItem(gridItem) {
     $(this).remove()
   })
 }
+
+function setItemHeightVariable() {
+  /*
+    https://stackoverflow.com/questions/2345784/jquery-get-height-of-hidden-element-in-jquery/2345813#2345813
+    https://stackoverflow.com/questions/4777077/removing-elements-by-class-name#4777105
+    https://getbootstrap.com/docs/4.5/utilities/visibility/
+    https://getbootstrap.com/docs/4.5/utilities/position/
+  */
+  $(".sample-components").removeClass('d-none').addClass('invisible fixed-top')
+  // https://stackoverflow.com/questions/9592575/get-height-of-div-with-no-height-set-in-css/9592620#9592620
+  var gridItemHeight = $(".sample-components .grid-column .grid-item").innerHeight()
+  $(".sample-components").removeClass('invisible fixed-top').addClass('d-none')
+  console.log(gridItemHeight)
+  // https://stackoverflow.com/questions/41370741/how-do-i-edit-a-css-variable-using-js/41371037#41371037
+  document.documentElement.style.setProperty("--item-height", gridItemHeight+"px")
+}
+
+// https://stackoverflow.com/questions/2758651/how-to-change-height-div-on-window-resize/2758657#2758657
+$(() => {
+  $(window).resize(() => {
+    setItemHeightVariable()
+  }).resize()
+})
