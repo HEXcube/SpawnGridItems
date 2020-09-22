@@ -27,7 +27,10 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center">
       <div class="col spawn-button-column py-3">
         <button type="button" class="btn btn-outline-secondary btn-block h-100" id="spawn-item-button"
-          onclick="spawnGridItem()">Spawn Item</button>
+          onclick="spawnGridItem()">
+          <span class="d-block">&#x2795;</span>
+          <span>Spawn Item</span>
+        </button>
       </div><!-- ./col -->
     </div><!-- ./row -->
   </div><!-- ./container -->
@@ -38,7 +41,14 @@
         https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
         https://getbootstrap.com/docs/4.5/utilities/borders/#border-radius
       -->
-      <div class="grid-item bg-secondary rounded-lg p-5 text-center">item</div><!-- ./grid-item -->
+      <div class="grid-item bg-secondary rounded-lg p-5 text-center">
+        <span>item</span>
+        <!-- https://geeksforgeeks.org/how-to-make-bootstrap-button-transparent/ -->
+        <button onclick="removeGridItem()" type="button" class="btn bg-transparent">
+          <!-- https://tutorialzine.com/2014/12/you-dont-need-icons-here-are-100-unicode-symbols-that-you-can-use -->
+          <span>&#x2716;</span>
+        </button>
+      </div><!-- ./grid-item -->
     </div><!-- ./col -->
   </div><!-- ./sample-components -->
 
