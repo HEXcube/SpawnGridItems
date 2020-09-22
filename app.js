@@ -8,10 +8,12 @@ function spawnGridItem() {
   $(".sample-components .grid-column").clone().hide().insertBefore(".spawn-button-column").fadeIn("slow")
 }
 
-function removeGridItem(thisObj) {
+function removeGridItem(gridItem) {
   /*
     https://stackoverflow.com/questions/5333426/how-to-find-a-parent-with-a-known-class-in-jquery/5333443#5333443
     How to remove html elements with jQuery fadeOut effect - https://codepen.io/ChemBioScripting/pen/xeslL
   */
-  $(thisObj).closest('.grid-column').fadeOut("slow", () => $(thisObj).remove())
+  $(gridItem).closest('.grid-column').fadeOut("slow", function () {
+    $(this).remove()
+  })
 }
