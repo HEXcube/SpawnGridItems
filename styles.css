@@ -24,10 +24,9 @@
 
 /* https://bitsofco.de/when-do-the-hover-focus-and-active-pseudo-classes-apply/#orderofstyleshoverthenfocusthenactive */
 .remove-item-button:hover {
-  color: white;
+  color: var(--danger);
 }
 
 .remove-item-button:focus, .remove-item-button:active {
-  /* https://css-tricks.com/8-digit-hex-codes/ */
-  color: #00000080;
+  color: var(--primary);
 }
