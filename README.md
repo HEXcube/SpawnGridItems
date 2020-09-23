@@ -5,9 +5,9 @@ Live Demos
 ----------
 [See live demo on GitHub Pages](https://hexcube.github.io/SpawnGridItems)
 
-Or if you feel like playing around with the code, I've set up two pens as well:
-[Spawn & Delete Grid Items on CodePen](https://codepen.io/hexcube/pen/ExKGpLy)
-[Spawn & Delete Grid Items (with equi-sized spawn button) on CodePen](https://codepen.io/hexcube/pen/yLOGqRL)
+Or if you feel like playing around with the code, I've set up two pens as well on CodePen:
+- [Spawn & Delete Grid Items](https://codepen.io/hexcube/pen/ExKGpLy)
+- [Spawn & Delete Grid Items (with equi-sized spawn button)](https://codepen.io/hexcube/pen/yLOGqRL)
 
 CREDITS
 -------
