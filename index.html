@@ -28,8 +28,8 @@
     -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center">
       <div class="col spawn-button-column py-3">
-        <button type="button" class="btn btn-primary btn-block h-100" id="spawn-item-button"
-          onclick="spawnGridItem()">
+        <button type="button" class="btn btn-primary btn-block h-100" id="spawn-item-button" onclick="spawnGridItem()"
+          title="Add an item">
           <!--
             https://getbootstrap.com/docs/4.5/content/typography/
             https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip/38452396#38452396
@@ -57,7 +57,9 @@
               https://geeksforgeeks.org/how-to-make-bootstrap-button-transparent/
               https://getbootstrap.com/docs/4.5/utilities/shadows/
             -->
-            <button onclick="removeGridItem(this)" type="button" class="remove-item-button btn bg-transparent pt-3 pr-3 shadow-none position-absolute">
+            <button onclick="removeGridItem(this)" type="button"
+              class="remove-item-button btn bg-transparent pt-3 pr-3 shadow-none position-absolute"
+              title="Remove this item">
               <!-- https://tutorialzine.com/2014/12/you-dont-need-icons-here-are-100-unicode-symbols-that-you-can-use -->
               <span class="prevent-emoji">&#x2716;&#xFE0E;</span>
             </button>
