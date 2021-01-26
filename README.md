@@ -13,7 +13,7 @@ CREDITS
 -------
 This example is built upon the following libraries:
 - [Bootstrap 4](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-- [jQUery](https://jquery.com)
+- [jQuery](https://jquery.com)
 
 LICENSE
 -------
